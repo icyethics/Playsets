@@ -1,0 +1,12 @@
+{
+    "id": "playset",
+    "name": "Balatro Playsets",
+    "author": ["IcyEthics"],
+    "description": "Adds the option to set up and play with curated content sets",
+    "prefix": "playset",
+    "main_file": "Playsets.lua",
+    "badge_colour": "1b61ad",
+    "version": "0.0.01-INDEV",
+    "dependencies": ["Steamodded (>=1.0.0~BETA-0303a)", "Lovely (>=0.7)"]
+    
+}
