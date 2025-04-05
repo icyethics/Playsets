@@ -20,8 +20,16 @@ end
 local igo = Game.init_game_object
 Game.init_game_object = function(self)
     local ret = igo(self)
+
     ret.playsets = {}
-    ret.playsets[#ret.playsets + 1] = "playset_debugset"
+    -- While there is no config or ui set up, you change the used playsets by adding its key to this list
+    local _playset_keys = {
+        "playset_debugset"
+    }
+
+    for _, _playset in ipairs(_playset_keys) do
+        ret.playsets[#ret.playsets + 1] = _playset
+    end
     load_playsets(ret)
 
     return ret
